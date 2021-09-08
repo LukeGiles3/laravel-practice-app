@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="resources/css/app.css" rel="stylesheet">
     <title>Welcome</title>
 </head>
-<body>
+<body class="bg-blue-500">
     <h1>this is the welcome page</h1>
-    <h3>go to <a href="/login" class="text-cyan-600 hover:text-cyan-700">login</a> page</h3>
+    <h3>go to <a href="/login" class="text-gray-500">login</a> page</h3>
 </body>
 </html>
