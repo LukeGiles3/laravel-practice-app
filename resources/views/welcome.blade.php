@@ -10,15 +10,15 @@
     </head>
     <body class="bg-green-light">
         <div class="flex items-center justify-center text-center flex-col min-h-screen text-white">
-            <div class="text-8xl">
+            <div class="text-8xl m-3">
                 World Football News
             </div>
-            <div class="text-4xl">
+            <div class="text-4xl m-3">
                 Begin by registering or logging in
             </div>
-            <div class="flex items-center justify-center text-center">
-                <a href="/login"><button class="bg-yellow-light hover:bg-yellow-dark text-white font-bold py-2 px-4 rounded">Login</button></a> 
-                <a href="/register"><button class="bg-yellow-light hover:bg-yellow-dark text-white font-bold py-2 px-4 rounded">Register</button></a> 
+            <div class="flex items-center justify-center text-center m-3">
+                <a href="/login"><button class="bg-yellow-light hover:bg-yellow-dark text-white font-bold py-2 px-4 rounded m-3">Login</button></a> 
+                <a href="/register"><button class="bg-yellow-light hover:bg-yellow-dark text-white font-bold py-2 px-4 rounded m-3">Register</button></a> 
             </div>
         </div>
     </body>
