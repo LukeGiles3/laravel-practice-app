@@ -8,8 +8,15 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-green-light overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-green-dark border-b border-gray-200">
-                    You're logged in!
+                <div class="p-6 bg-green-dark text-white text-2xl text-center border-4">
+                    Account Details
+                </div>
+                <div class="p-6 bg-green-dark text-white text-2xl my-3">
+                    Name: {{ Auth::user()->name }} <br>
+                    Email: {{ Auth::user()->email }} <br>
+                    {{-- Click <a class="underline" href="{{ route('password.email') }}">
+                        {{ __('here') }}
+                    </a> and a password reset email will be sent --}} {{--not working yet-}}
                 </div>
             </div>
         </div>
