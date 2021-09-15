@@ -14,9 +14,6 @@
                 <div class="p-6 bg-green-dark text-white text-2xl my-3">
                     Name: {{ Auth::user()->name }} <br>
                     Email: {{ Auth::user()->email }} <br>
-                    {{-- Click <a class="underline" href="{{ route('password.email') }}">
-                        {{ __('here') }}
-                    </a> and a password reset email will be sent --}} {{--not working yet-}}
                 </div>
             </div>
         </div>

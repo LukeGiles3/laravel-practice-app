@@ -2,6 +2,7 @@
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
+use Illuminate\Http\Client;
 
 define('LARAVEL_START', microtime(true));
 
@@ -53,3 +54,15 @@ $response = tap($kernel->handle(
 ))->send();
 
 $kernel->terminate($request, $response);
+
+// $client = new Client;
+// $request = new Request;
+// $request->setRequestUrl('https://v3.football.api-sports.io/{endpoint}');
+// $request->setRequestMethod('GET');
+// $request->setHeaders(array(
+//     'x-rapidapi-host' => 'v3.football.api-sports.io',
+//     'x-rapidapi-key' => 'XxXxXxXxXxXxXxXxXxXxXxXx'
+// ));
+// $client->enqueue($request)->send();
+// $response = $client->getResponse();
+// echo $response->getBody();
