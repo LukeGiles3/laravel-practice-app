@@ -26,10 +26,13 @@
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
-                <x-button>
+            <div class="flex flex-col items-end justify-end mt-4">
+                <button class="bg-yellow-light text-white font-bold py-2 px-4 border-b-4 rounded">
                     {{ __('Email Password Reset Link') }}
-                </x-button>
+                </button>
+                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                    {{ __('Nevermind, go back') }}
+                </a>
             </div>
         </form>
     </x-auth-card>
