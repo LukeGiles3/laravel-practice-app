@@ -15,6 +15,20 @@
                     Name: {{ Auth::user()->name }} <br>
                     Email: {{ Auth::user()->email }} <br>
                 </div>
+                <div class="p-6 bg-green-dark text-white text-2xl text-center border-4">
+                    <h1>Favorites</h1>
+                </div>
+                <div class="p-6 bg-green-dark text-white text-2xl my-3">
+                    <div>
+                        <h1>Leagues: </h1>
+                    </div>
+                    <div>
+                        <h1>Players: </h1>
+                    </div>
+                    <div>
+                        <h1>Managers: </h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

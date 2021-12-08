@@ -21,8 +21,24 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/teams', function () {
-    return view('teams');
-})->middleware(['auth'])->name('teams');
+Route::get('/leagues', function () {
+    return view('leagues');
+})->middleware(['auth'])->name('leagues');
+
+Route::get('/fixtures', function () {
+    return view('fixtures');
+})->middleware(['auth'])->name('fixtures');
+
+Route::get('/players', function () {
+    return view('players');
+})->middleware(['auth'])->name('players');
+
+Route::get('/managers', function () {
+    return view('managers');
+})->middleware(['auth'])->name('managers');
+
+Route::get('/stats', function () {
+    return view('stats');
+})->middleware(['auth'])->name('stats');
 
 require __DIR__.'/auth.php';

@@ -1,5 +1,5 @@
 <x-app-layout>
     <div>
-     test   
+        leagues
     </div>
 </x-app-layout>
