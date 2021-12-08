@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Client;
 use GuzzleHttp;
 
-class teams extends Controller
+class Leagues extends Controller
 {
-    public function getTeams()
+    public function getLeagues()
     {
         $client = new GuzzleHttp\Client();
         $res =

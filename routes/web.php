@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Leagues;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/leagues', function () {
+Route::get('/leagues', [Leagues::class, 'getLeagues'], function() {
     return view('leagues');
 })->middleware(['auth'])->name('leagues');
 
