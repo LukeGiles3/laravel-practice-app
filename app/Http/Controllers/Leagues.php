@@ -16,7 +16,7 @@ class teams extends Controller
             $client->request('GET', 'https://api-football-v1.p.rapidapi.com/v3/teams?id=33', [
                 'headers' => [
                     'x-rapidapi-host' => 'api-football-v1.p.rapidapi.com',
-                    'x-rapidapi-key' => 'b9d437a25dmsh46d1cdd0f6ba37ap16f6f2jsnd7c3bfc50aa8'
+                    'x-rapidapi-key' => env("RAPID_API_KEY")
                 ]
             ]);
         return $res->getBody();
